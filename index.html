@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FORESIGHT</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <img src="FORESIEGHPIC.svg" alt="Company">
+    </div>
+    <div id="about">
+      
+      <li><a class="hideOnMobile  lang" key="main" href="#"  title="Возможности" onclick="slowScroll('#main')">Ең Бастысы</a></li>
+      <li><a class="hideOnMobile lang" key="participants" href="#"  onclick="slowScroll('#overview')" title="Контакты">Қатысушылар</a></li>
+      <li><a class="hideOnMobile lang" key="information" href="#"  onclick="slowScroll('#faq')" title="Ответы на вопросы">Ақпарат</a></li>
+      <li class="lang-en"><a><button id="en"  class="translate">EN</button></a></li>
+      <li class="lang-ru"><a><button id="ru"  class="translate">RU</button></a></li>
+      <li class="lang-kz"><a><button id="kz"  class="translate">KZ</button></a></li>
+      <li><a class="hideOnDesctop"  onclick=showSidebar() href="#" ><img src="menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Company"></a></li>
+      
+    </div>
+   
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar (){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+<nav>   
+  <ul class="sidebar">
+    <li><a href="#"  onclick=hideSidebar() ><img src="close_FILL0_wght400_GRAD0_opsz24.svg" alt="Company"></a></li>
+    <li><a href="#" class="  lang" key="main" title="Возможности" onclick="slowScroll('#main')">Ең Бастысы</a></li>
+    <li><a href="#" class="  lang" key="participants" onclick="slowScroll('#overview')" title="Контакты"> Қатысушылар</a></li>
+    <li><a href="#" class=" lang" key="information" onclick="slowScroll('#faq')" title="Ответы на вопросы">Ақпарат</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="top">
+    <h1 class=" lang" key="title">FORESIGHT</h1>
+    <br>
+    <h3 class=" lang" key="description" >	<strong>Жоба тақырыбы:</strong> SKILLS TECHNOLOGY FORESIGHT  әдісі  негізінде Қазақстан өңірлерінің жаңа кәсіптері мен құзыреттері  атластарын әзірлеу</h3>
+  </div>
+
+   
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+          function slowScroll(id) {
+            $('html, body').animate({
+              scrollTop: $(id).offset().top
+            }, 500);
+          }
+      
+          
+        </script>
+
+</div>
+
+<div id="overview">
+  <div class="element-big2 green"></div>
+        <div class="element-animation">
+  <h2 class="lang" key="w1" >Зерттеу тобы:</h2>
+
+  <div class="img">
+    <img src="1.jpg" alt="">
+    <span class="lang" key="w3">Егенисова Алмажай Құлжанқызы ,  Педагогика ғылымдарының кандидаты, психология доценті, Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="2.jpg" alt="">
+    <span class="lang" key="w4">Мендалиева Шынар Оразалиевна,<br>Техника және технология ғылымдарының 
+      Магистрі, Yessenov University
+      </span>
+  </div>
+  <div class="img">
+    <img src="3.jpg" alt="">
+    <span class="lang" key="w5">	Мамбетова Алтын Ибрагимовна, Культурология кандидаты, Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="4.jpg" alt="">
+    <span class="lang" key="w6">	Аккенжеева Анар Шынабаевна, техника ғылымдарының кандидаты, Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="5.jpg" alt="">
+    <span class="lang" key="w7">	Косымбаева Шынар Исабековна  Менеджмент ғылымдарының магистрі, Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="6.jpg" alt="">
+    <span class="lang" key="w8">	Кошимова Бибатпа Амирхановна, филология ғылымдарының кандидаты, профессор, Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="7.jpg" alt="">
+    <span class="lang" key="w9">	Естурлиева Айгуль Икласовна, Экономика ғылымдарының кандидаты, Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="8.jpg" alt="">
+    <span class="lang" key="w10">Джанисенова Алия Мейрбековна, PhD, Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="9.jpg" alt="">
+    <span class="lang" key="w11">	Әбидин Әбубәкір Надирхожаұлы,<br>Әлеуметтік ғылымдар магистрі , Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="15.jpg" alt="">
+    <span class="lang" key="w12">	Джумабекова Роза Амановна, Доктор PhD, Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="11.jpg" alt="">
+    <span class="lang" key="w13">	Аманиязова Гулимай Демегеновна, Экономика ғылымдарының кандидаты, профессор, Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="12.jpg" alt="">
+    <span class="lang" key="w14">	Шарипова Айгерим Батырсариевна, Педагогика ғылымдарының магистрі, Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="13.jpg" alt="">
+    <span class="lang" key="w15">	Жайлаубаева Жадра Алламратовна Экономика ғылымдарының магистрі, Yessenov University</span>
+  </div>
+  <div class="img">
+    <img src="14.jpg" alt="">
+    <span class="lang" key="w16">	Актилеуова Гулдана Молдашовна, Экономика ғылымдарының магистрі, Yessenov University</span>
+  </div>
+</div>
+
+<div id="faq">
+<div>
+  <span class="lang" key="geg"><b>Негізгі ақпарат</b></span><br>
+  <p class="lang" key="fef1">	
+  <b>Жоба мерзімі:</b> 2023-2025 жж</p>
+    <br>
+  <p class="lang" key="fef2"><b>Қаржыландыру сомасы:</b> 249 929 572 теңге</p>
+    <br>
+  <p class="lang" key="fef3"><b>Концарциум мүшелері:</b>
+    
+    <p class="lang" key="fef4">Yessenov University</p>
+    
+    <p class="lang" key="fef5">Zhubanov University</p>
+    
+    <p class="lang" key="fef6">Atyrau University</p>
+    
+    <p class="lang" key="fef7">Atyrau Oil and Gas University</p>
+  </p>
+  
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function slowScroll(id) {
+  $('html, body').animate({
+    scrollTop: $(id).offset().top
+  }, 500);
+}
+
+$(document).on("scroll", function () {
+  if($(window).scrollTop() === 0)
+    $("header").removeClass("fixed");
+  else
+    $("header").attr("class", "fixed");
+});
+</script>
+<script>
+  var arrLang = {
+  'en': {
+    'main': 'Main',
+    'participants': 'Participants',
+    'information': 'Information',
+    'title': 'FORESIGHT',
+    'description' : 'PROJECT THEME: development of atlases of new professions and competencies of the regions of Kazakhstan based on the SKILLS TECHNOLOGY FORESIGHT method',
+    'w1': 'Research team:',
+    'w3': 'Yegenisova Almazhay Kulzhanovna, candidate of Pedagogical Sciences, Associate Professor of Psychology,Yessenov University',
+    'w4': 'Mendalieva Shynar Orazalievna, Master of technical and technological sciences, Yessenov University',
+    'w5': 'Mambetova Altyn Ibragimovna, candidate of Cultural studies, Yessenov University  ',
+    'w6': 'Akkenzheeva Anar Shynabaevna, candidate of Technical Sciences, Yessenov University',
+    'w7': 'Kosymbaeva Shynar Isabekovna master of Management Sciences, Yessenov University',
+    'w8': 'Koshimova Bibatpa Amirkhanovna, candidate of philological sciences, professor, Yessenov University',
+    'w9': '	Yesturlieva Aigul Iklasovna, candidate of Economic Sciences, Yessenov University',
+    'w10': '	Dzhanisenova Aliya Meirbekovna, PhD, Yessenov University',
+    'w11': 'Abidin Abubakir Nadirkhozhaevich, master of Social Sciences, Yessenov University',
+    'w12': '	Jumabekova Roza Amanovna, PhD, Yessenov University',
+    'w13': '	Amaniyazova Gulimay Demegenovna, candidate of Economic Sciences, Professor, Yessenov University',
+    'w14': '	Sharipova Aigerim Batyrsarievna, master of Pedagogical Sciences, Yessenov University.',
+    'w15': '	Zhailaubayeva Zhadra Allamratovna, master of Economic Sciences, Yessenov University',
+    'w16': 'Aktileuova Guldana Moldashovna, master of Economic Sciences, Yessenov University',
+    'geg': 'Basic information',
+    'fef1':'Project period: 2023-2025 ',
+    'fef2':'Financing  amount: KZT 249,929,572 ',
+    'fef3':'Members of consortium:',
+    'fef4':'Yessenov University',
+    'fef5':'Zhubanov University',
+    'fef6':'Atyrau University',
+    'fef7':'Atyrau Oil and Gas University',
+  },
+  'ru': {
+    'main': 'Главное',
+    'participants': 'Участнки',
+    'information': 'Информация',
+    'title': 'FORESIGHT',
+    'description' : 'ТЕМА ПРОЕКТА: разработка Атласов новых профессий и компетенций регионов Казахстана на основе метода SKILLS TECHNOLOGY FORESIGHT',
+    'w1': 'Исследовательская группа:',
+    'w3': 'Егенисова Алмажай Кулжановна, кандидат педагогических наук, доцент психологии, Yessenov University',
+    'w4': 'Мендалиева Шынар Оразалиевна, магистр технических и технологических наук , Yessenov University',
+    'w5': '	Мамбетова Алтын Ибрагимовна, кандидат культуралогии, Yessenov University',
+    'w6': 'Аккенжеева Анар Шынабаевна, кандидат технических наук, Yessenov University',
+    'w7': ' Косымбаева Шынар Исабековна магистр управленческих наук, Yessenov University',
+    'w8': 'Кошимова Бибатпа Амирхановна, кандидат филологических наук, профессор, Yessenov University',
+    'w9': 'Естурлиева Айгуль Икласовна, кандидат экономических наук, Yessenov University',
+    'w10': '	Джанисенова Алия Мейрбековна, PhD, Yessenov University',
+    'w11': 'Абидин Абубакир Надирходжаевич, магистр социальных наук, Yessenov University',
+    'w12': 'Джумабекова Роза Амановна, Доктор PhD, Yessenov University',
+    'w13': 'Аманиязова Гулимай Демегеновна, кандидат экономических наук, профессор, Yessenov University',
+    'w14': 'Шарипова Айгерим Батырсариевна, магистр педагогических наук, Yessenov University',
+    'w15':'Жайлаубаева Жадра Алламратовна магистр экономических наук, Yessenov University',
+    'w16': 'Актилеуова Гулдана Молдашовна, магистр экономических наук, Yessenov University',
+    'geg': 'Основная информация',
+    'fef1':'Дата проекта: 2023-2025 гг.',
+    'fef2':'Сумма финансирования: 249 929 572 тенге',
+    'fef3':'Члены Консорциума:',
+    'fef4':'Yessenov University',
+    'fef5':'Zhubanov University',
+    'fef6':'Atyrau University',
+    'fef7':'Atyrau Oil and Gas University',
+  },
+  'kz': {
+    'main': 'Ең Бастысы',
+    'participants': 'Қатысушылар',
+    'information': 'Ақпарат',
+    'title': 'FORESIGHT',
+    'description' : 'ЖОБА ТАҚЫРЫБЫ: SKILLS TECHNOLOGY FORESIGHT  әдісі  негізінде Қазақстан өңірлерінің жаңа кәсіптері мен құзыреттері  атластарын әзірлеу',
+    'w1': 'Зерттеу тобы',
+    'w3': 'Егенисова Алмажай Құлжанқызы ,  Педагогика ғылымдарының кандидаты, психология доценті, Yessenov University',
+    'w4': '	Мендалиева Шынар Оразалиевна,Техника және технология ғылымдарының Магистрі, Yessenov University',
+    'w5': '	Мамбетова Алтын Ибрагимовна, Культурология кандидаты, Yessenov University',
+    'w6': 'Аккенжеева Анар Шынабаевна, техника ғылымдарының кандидаты, Yessenov University',
+    'w7': '	Косымбаева Шынар Исабековна  Менеджмент ғылымдарының магистрі, Yessenov University',
+    'w8': 'Кошимова Бибатпа Амирхановна, филология ғылымдарының кандидаты, профессор, Yessenov University',
+    'w9': '	Естурлиева Айгуль Икласовна, Экономика ғылымдарының кандидаты, Yessenov University',
+    'w10': '	Джанисенова Алия Мейрбековна, PhD, Yessenov University',
+    'w11': '	Әбидин Әбубәкір Надирхожаұлы,Әлеуметтік ғылымдар магистрі , Yessenov University',
+    'w12': '	Джумабекова Роза Амановна, Доктор PhD, Yessenov University',
+    'w13': 'Аманиязова Гулимай Демегеновна, Экономика ғылымдарының кандидаты, профессор, Yessenov University',
+    'w14': '	Шарипова Айгерим Батырсариевна, Педагогика ғылымдарының магистрі, Yessenov University',
+    'w15': '	Жайлаубаева Жадра Алламратовна Экономика ғылымдарының магистрі, Yessenov University',
+    'w16': 'Актилеуова Гулдана Молдашовна, Экономика ғылымдарының магистрі, Yessenov University',
+    'geg': 'Негізгі ақпарат',
+    'fef1':'Жоба мерзімі: 2023-2025 жж',
+    'fef2':'Қаржыландыру сомасы: 249 929 572 теңге',
+    'fef3':'Концарциум мүшелері:',
+    'fef4':'Yessenov University',
+    'fef5':'Zhubanov University',
+    'fef6':'Atyrau University',
+    'fef7':'Atyrau Oil and Gas University',
+  },
+}
+
+$(function() {
+  $('.translate').click(function() {
+    var lang = $(this).attr('id');
+
+    $('.lang').each(function(index, item) {
+      var key = $(this).attr('key');
+      $(this).text(arrLang[lang][key]);
+    });
+  });
+});
+
+</script>
+
+</body>
+</html>

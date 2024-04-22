@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body , html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Trebuchet MS, Helvetica;
+    background-color: rgba(0 , 0, 0, 0.5);
+}
+
+header{
+    width: 100%;
+    
+    position: absolute;
+}
+
+header #logo {
+    padding-top: 0px;
+    color: #fff;
+    cursor: pointer;
+   
+}
+
+header #about {
+  margin-top: -80px;
+}
+
+#logo img {
+  width: 100px;
+  height: 30px;
+  padding: 20px 20px 20px 20px;
+}
+
+
+
+@media (min-width: 501px) {
+    
+
+    #about .hideOnDesctop{
+      display: none;
+      
+    }
+
+  
+}
+
+
+@media (max-width: 700px) {
+    
+
+    #about .hideOnMobile{
+      display: none;
+      
+      padding-top: 20px;
+    }
+
+    
+  
+}
+
+#about{
+  float: right;
+  width: 100%;
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#about img {
+  width: 30px;
+  height: 30px;
+}
+#about li{
+  list-style: none;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  text-align: center;
+  
+  font-size: 1em;
+}
+
+
+
+#about > li a {color:#fff}
+#about > li a:hover {
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+
+
+
+#about li a {
+    text-decoration: none;
+}
+
+#top {
+    width: 100%;
+    background-image: url(cropped-IMG_4714.jpg);
+   background-blend-mode: multiply;
+  background-color: #18025c;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    font-family: Trebuchet MS, Helvetica;
+  }
+  
+  @media (min-width: 1001px) {
+    #top {
+      font-size: 3em;
+      height: 1000px;
+      background-image: url(cropped-IMG_4714.jpg);
+    }
+  }
+  
+  @media (max-width: 1000px) and (min-width: 651px) {
+    #top {
+      font-size: 2em;
+      height: 600px;
+      background-image: url(cropped-IMG_4714.jpg);
+    }
+  }
+  
+  @media (max-width: 650px) {
+    #top {
+      font-size: 1.3em;
+      padding-top: 50%;
+      height: 500px;
+      background-image: url(cropped-IMG_4714.jpg);
+    }
+  }
+  
+  @media (max-width: 450px) {
+    #top {
+      font-size: 0.9em;
+      background-image: url(cropped-IMG_4714.jpg);
+    }
+  }
+  
+  #top h1 {
+    color: #ffe30c;
+    padding-top: 20%;
+    font-size: 3rem;
+  }
+  
+  #top h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
+  #top h3 strong {
+    color: #fff;
+    font-size: 1.3em;
+  }
+
+
+
+.green {
+    background-color: none;
+  }
+  
+  .red {
+    background-color: none;;
+  }
+  
+  
+  .element-big  {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .element-animation {
+    
+    
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .element-animation.element-show {
+    opacity: 1;
+    transition: 2s;
+    transform: translateY(0%);
+  }
+
+
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: -10px 0 10px rgba(0 , 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter:blur(10px) ;
+  transition: 1s
+}
+
+.sidebar li {
+  width: 100%;
+  transition: 1s;
+}
+
+.sidebar a {
+  width: 100%;
+  font-size: 1em;
+  text-decoration: none;
+  text-decoration-line: none;
+  padding: 20px 20px 20px 20px;
+  float: left;
+  transition: 0.75s;
+}
+
+.sidebar img {
+  width: 30px;
+  height: 30px;
+  transition: 1s;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+nav a {
+  height: 100%;
+  padding: 0 60px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav a:hover{
+  background-color: #f0f0f0;
+  font-size: 1.5em;
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+  
+#overview {
+  font-family: Trebuchet MS, Helvetica;
+  float: left;
+  background-image: url(cropped-IMG_4714.jpg);
+   background-blend-mode: multiply;
+  background-color: #18025c;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+#overview h2 {
+  font-size: 4em;
+  
+}
+
+@media (min-width: 561px) {
+  #overview h2 {font-size: 4em}
+}
+
+@media (max-width: 560px) {
+  #overview h2 {font-size: 2em}
+}
+
+#overview .img {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+#overview .img:nth-child(odd) {
+  margin-left: 18%;
+}
+
+#overview img {
+  background: #fafafa;
+  padding: 5px;
+  border: 2px solid white;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+#overview span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1em;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 700px) {
+  #overview .img {
+    width: 80%!important;
+    margin-right: 0!important;
+    margin-left: 10%!important;
+  }
+}
+
+
+
+
+#faq {
+  font-family: Trebuchet MS, Helvetica;
+  background-color: #fff;
+  width: 100%;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 801px) {
+  #faq div {
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+  }
+}
+
+@media (max-width: 800px) {
+  #faq div {
+    width: 80%;
+    margin-left: 10%;
+    float: left;
+  }
+}
+
+#faq .title {
+  font-weight: lighter;
+  color: #a3a0ad;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+#faq .heading {
+  color: #7d7d7d;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#faq p {
+  font-family: Arimo, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #4a4a4a;
+  font-size: 0.95em;
+  margin-bottom: 40px;
+}
+ 
+.translate {
+  background-color: transparent;
+  border: 1px solid white;
+  width: 25px;
+  height: 15px;
+  font-size: 0.5em;
+  color: #fff;
+  cursor: pointer;
+}
+
